@@ -15,7 +15,7 @@ $(document).ready(function () {
     }
   });
 
-  //  slide-up script  //
+  //  slides up  //
 
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
@@ -24,7 +24,7 @@ $(document).ready(function () {
   });
 
   $(".navbar .menu li a").click(function () {
-    //  Smooth scroll on Menu Items click  //
+    // scroll on Menu Items click  //
 
     $("html").css("scrollBehavior", "smooth");
   });

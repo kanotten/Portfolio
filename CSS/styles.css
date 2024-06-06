@@ -518,7 +518,12 @@ section .title::after {
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+}
+
+.card-icons {
+    color: #007bff; /* Example color */
+    /* Add any other styles you want */
 }
 
 .projects .carousel .card:hover {
@@ -530,7 +535,7 @@ section .title::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .projects .carousel .card:hover .box {
@@ -549,7 +554,7 @@ section .title::after {
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #888c8d;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .projects .carousel .card:hover img {
@@ -568,7 +573,7 @@ section .title::after {
     outline: none !important;
     border-radius: 50%;
     border: 2px solid #888c8d !important;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .owl-dot.active {
