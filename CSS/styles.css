@@ -821,7 +821,7 @@ footer span a:hover {
 
 @media (max-width: 991px) {
     .social-menu ul li a {
-        left: 114px;
+        display: center;
     }
 }
 
