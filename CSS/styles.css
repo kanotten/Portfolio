@@ -139,7 +139,7 @@ section .title::after {
 
 /*  Nav Logo Span Linear-Gradient  */
 .navbar .logo a span {
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease;

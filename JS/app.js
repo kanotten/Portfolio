@@ -39,26 +39,14 @@ $(document).ready(function () {
   //  Typing Text Animation  //
 
   var typed = new Typed(".typing", {
-    strings: [
-      "Fullstack Developer",
-      "Software Developer",
-      "Python Developer",
-      "Founder",
-      "Author",
-    ],
+    strings: ["Fullstack Developer", "Frontend developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
-    strings: [
-      "Fullstack Developer",
-      "Software Developer",
-      "Python Developer",
-      "Founder",
-      "Author",
-    ],
+    strings: ["Fullstack Developer", "Frontend Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
