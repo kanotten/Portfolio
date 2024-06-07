@@ -1,13 +1,13 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    //  sticky navbar on scroll script  //
+    // Sticky navbar on scroll script
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
     } else {
       $(".navbar").removeClass("sticky");
     }
 
-    //  scroll-up button show/hide script  //
+    // Scroll-up button show/hide script
     if (this.scrollY > 500) {
       $(".scroll-up-btn").addClass("show");
     } else {
@@ -15,29 +15,25 @@ $(document).ready(function () {
     }
   });
 
-  //  slides up  //
-
+  // Slides up
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
-    //  removing smooth scroll on slide-up button click  //
+    // Removing smooth scroll on slide-up button click
     $("html").css("scrollBehavior", "auto");
   });
 
   $(".navbar .menu li a").click(function () {
-    // scroll on Menu Items click  //
-
+    // Scroll on Menu Items click
     $("html").css("scrollBehavior", "smooth");
   });
 
-  //  Toggle Navbar  //
-
+  // Toggle Navbar
   $(".menu-btn").click(function () {
     $(".navbar .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
   });
 
-  //  Typing Text Animation  //
-
+  // Typing Text Animation
   var typed = new Typed(".typing", {
     strings: ["Fullstack Developer", "Frontend developer"],
     typeSpeed: 100,
@@ -52,8 +48,7 @@ $(document).ready(function () {
     loop: true,
   });
 
-  //  Owl Carousel  //
-
+  // Owl Carousel
   $(".carousel").owlCarousel({
     margin: 20,
     loop: true,
@@ -74,5 +69,17 @@ $(document).ready(function () {
         nav: false,
       },
     },
+  });
+
+  // Redirect to project detail pages
+  $(".card").click(function () {
+    var projectName = $(this).find(".text").text().trim().toLowerCase();
+    if (projectName === "science center") {
+      window.location.href = "science.html";
+    } else if (projectName === "fighting game") {
+      window.location.href = "fight.html";
+    } else {
+      window.location.href = projectName + ".html";
+    }
   });
 });
