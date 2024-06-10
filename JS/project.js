@@ -11,15 +11,16 @@ function loadScript(url, callback) {
 loadScript("https://code.jquery.com/jquery-3.5.1.min.js", function () {
   // jQuery loaded, now execute your code
   $(document).ready(function () {
+    // jQuery code to set up event listeners and other functionality
+
+    // Sticky navbar on scroll script
     $(window).scroll(function () {
-      // Sticky navbar on scroll script
       if (this.scrollY > 20) {
         $(".navbar").addClass("sticky");
       } else {
         $(".navbar").removeClass("sticky");
       }
 
-      // Scroll-up button show/hide script
       if (this.scrollY > 500) {
         $(".scroll-up-btn").addClass("show");
       } else {
@@ -27,15 +28,14 @@ loadScript("https://code.jquery.com/jquery-3.5.1.min.js", function () {
       }
     });
 
-    // Slides up
+    // Scroll-up button show/hide script
     $(".scroll-up-btn").click(function () {
       $("html").animate({ scrollTop: 0 });
-      // Removing smooth scroll on slide-up button click
       $("html").css("scrollBehavior", "auto");
     });
 
+    // Smooth scroll on Menu Items click
     $(".navbar .menu li a").click(function () {
-      // Scroll on Menu Items click
       $("html").css("scrollBehavior", "smooth");
     });
 

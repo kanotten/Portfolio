@@ -797,18 +797,39 @@ section .title::after {
 }
 
 /*styling for the project details page */
+.back-link-container {
+    margin: 40px;
+}
+
+.styled-link {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1e3551;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.styled-link:hover {
+    background-color: #162841;
+}
+
 .project-image img {
     height: 350px;
     width: 350px;
     object-fit: contain;
 }
+
 .project-image {
     display: grid;
     place-items: center;
 }
+
 .project-detail {
     font-family: "Poppins", sans-serif;
 }
+
 .project-detail .title {
     font-size: 40px;
     font-weight: 500;

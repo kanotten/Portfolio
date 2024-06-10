@@ -119,6 +119,16 @@ html {
     width: 280px;
 }
 
+.back-button-container {
+    margin: 20px;
+}
+
+#backButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 ::-webkit-scrollbar-thumb {
     border-radius: 12px;
     background: linear-gradient(135deg, #f57308, #fff, rgb(11, 242, 7));
